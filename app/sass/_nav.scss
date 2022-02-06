@@ -1,0 +1,61 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1.5rem 1rem;
+  &__close {
+    display: none;
+    @include desktop {
+      display: none;
+    }
+  }
+
+  @include desktop {
+    flex-wrap: nowrap;
+  }
+  @include desktop {
+    &__menu {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    a {
+      display: block;
+      margin-block: 0.5rem;
+      @include desktop {
+        display: inline;
+        margin: 0 0.5rem;
+      }
+    }
+    @include desktop {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0;
+      width: auto;
+    }
+  }
+  .btn {
+    display: none;
+
+    @include desktop {
+      display: inline-flex;
+    }
+  }
+}
+.collapsible--expanded .nav__list {
+  display: block;
+}
+.collapsible--expanded .nav__close {
+  @include desktop {
+    display: none;
+  }
+  display: block;
+}
+.collapsible--expanded .nav__menu {
+  display: none;
+}
