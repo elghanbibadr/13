@@ -2,7 +2,7 @@ $primary-color: #252c56;
 $secondary-color: hsl(12, 88%, 59%);
 $color-text: hsl(227, 12%, 61%);
 $Very-Dark-Blue: hsl(233, 12%, 13%);
-$Very-Pale-Red: hsl(13, 100%, 96%);
+$Very-Pale-Red: hsla(12, 100%, 96%, 0.801);
 $Vary-Light-Gray: hsl(0, 76%, 81%);
 $breaking-point: 768px;
 $breaking-point2: 950px;
@@ -21,6 +21,17 @@ $font-weight: (
   @media (min-width: $breaking-point2) {
     @content;
   }
+}
+@mixin contentCenter {
+  text-align: center;
+}
+@mixin contentLeft {
+  @include desktop {
+    text-align: center;
+  }
+}
+@mixin largeWidth {
+  width: 100%;
 }
 h1 {
   color: $Vary-Light-Gray;
