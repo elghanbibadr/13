@@ -1,0 +1,14 @@
+.callout {
+  background-color: $secondary-color;
+  @include contentCenter;
+  @include contentLeft;
+  padding: 2rem;
+  margin: 0;
+  &__heading {
+    color: white;
+  }
+  &__btn {
+    align-self: center;
+    justify-self: center;
+  }
+}
