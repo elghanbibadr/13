@@ -1,0 +1,57 @@
+.footer {
+  background-color: #1e1e26;
+  @include contentCenter;
+  position: relative;
+  padding: 1.5rem;
+  &__form {
+    grid-area: 1/3/1/4;
+
+    input {
+      width: 70%;
+    }
+  }
+  &__lists {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-block: 1rem;
+    grid-area: 1/2/1/3;
+    text-align: left;
+    margin-left: 1rem;
+    li {
+      color: white;
+      margin-top: 0.5rem;
+    }
+  }
+  .copyright {
+    color: white;
+  }
+  &__media {
+    margin-block: 2rem;
+    align-self: end;
+    svg {
+      margin-inline: 1rem;
+      @include desktop {
+        margin-inline: 0.5rem;
+      }
+    }
+  }
+  .copyright {
+    margin-top: 2rem;
+  }
+  @include desktop {
+    .copyright {
+      position: absolute;
+      bottom: 19%;
+      right: 5%;
+    }
+    &__logo {
+      grid-row: 1;
+      justify-self: center;
+    }
+
+    &__logo {
+      fill: white;
+    }
+  }
+}

@@ -70,6 +70,14 @@ a {
   color: #f25f3a;
 }
 
+.input {
+  padding: 0.7rem 1.2rem;
+  border: 0;
+  border-radius: 20px;
+  font-weight: 400;
+  font-family: inherit;
+}
+
 @media (min-width: 768px) {
   .grid {
     display: -ms-grid;
@@ -80,6 +88,14 @@ a {
   .grid--cols-2 {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+  }
+  .grid--cols-3 {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .grid--row-2 {
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
   }
 }
 /*# sourceMappingURL=main.css.map */
