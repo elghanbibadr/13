@@ -2,23 +2,22 @@
   margin-top: 2rem;
 
   svg {
-    // transform: scaleX(0.7);
-    // margin: auto;
-    // position: relative;
-    // right: 5rem;
-    // margin-bottom: 0;
-    // @include desktop {
-    //   width: 100%;
-    //   transform: none;
-    // }
-    width: 100%;
+    transform: translateX(-50px) scale(0.8);
+    @include desktop {
+      transform: none;
+    }
+  }
+  p {
+    margin-block: 1rem;
   }
 
   &__content {
     @include contentCenter;
     @include desktop {
       text-align: left;
-      grid-area: 1/1/1/1;
+      grid-area: 1/1/1/2;
+      align-self: center;
+      margin-left: 3rem;
     }
   }
 }

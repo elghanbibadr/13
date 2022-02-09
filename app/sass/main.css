@@ -32,6 +32,7 @@ a {
 
 h1 {
   font-weight: 800;
+  font-size: 2.5rem;
 }
 
 h2 {
@@ -97,5 +98,140 @@ a {
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
   }
+}
+
+.hero {
+  margin-top: 2rem;
+}
+
+.hero svg {
+  -webkit-transform: translateX(-50px) scale(0.8);
+          transform: translateX(-50px) scale(0.8);
+}
+
+@media (min-width: 768px) {
+  .hero svg {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.hero p {
+  margin-block: 1rem;
+}
+
+.hero__content {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hero__content {
+    text-align: left;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1/1/1/2;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-left: 3rem;
+  }
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1.5rem 1rem;
+}
+
+.nav__close {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav__close {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav__menu {
+    display: none;
+  }
+}
+
+.nav__list {
+  display: none;
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.nav__list a {
+  display: block;
+  margin-block: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .nav__list a {
+    display: inline;
+    margin: 0 0.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 0;
+    width: auto;
+  }
+}
+
+.nav .btn {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav .btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+.collapsible--expanded .nav__list {
+  display: block;
+}
+
+.collapsible--expanded .nav__close {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .collapsible--expanded .nav__close {
+    display: none;
+  }
+}
+
+.collapsible--expanded .nav__menu {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

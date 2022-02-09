@@ -2,12 +2,5 @@
 @import "./general";
 @import "./btn";
 @import "./grid";
-.hero {
-  margin-top: 2rem;
-  svg {
-    width: 100%;
-  }
-
-  &__content {
-  }
-}
+@import "./hero";
+@import "./nav";
