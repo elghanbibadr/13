@@ -1,0 +1,66 @@
+.container {
+  padding: 1rem;
+  @include contentCenter;
+  background-color: black;
+  background-color: #fafafa;
+}
+.carousel {
+  position: relative;
+  &__item {
+    padding: 1em;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #ffffff;
+    display: none;
+    transition: 0.5s;
+
+    @include desktop {
+      display: block;
+    }
+    &--selected {
+      display: block;
+      transition: 0.5s;
+    }
+    &--hidden {
+      @include desktop {
+        display: none;
+      }
+    }
+  }
+  &__img {
+    width: 100px;
+  }
+  h4 {
+    color: $primary-color;
+  }
+
+  &__text {
+    margin-block: 1rem;
+  }
+  &__nav {
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    margin-block: rem;
+    @include desktop {
+      display: none;
+    }
+  }
+  &__button {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border: 1px solid $secondary-color;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  &__button--selected {
+    background: $secondary-color;
+  }
+}

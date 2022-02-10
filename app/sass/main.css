@@ -46,7 +46,7 @@ h3 {
 p {
   color: #9095a7;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.4;
 }
 
@@ -233,5 +233,89 @@ a {
 
 .collapsible--expanded .nav__menu {
   display: none;
+}
+
+.container {
+  padding: 1rem;
+  text-align: center;
+  background-color: black;
+  background-color: #fafafa;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel__item {
+  padding: 1em;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: #ffffff;
+  display: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media (min-width: 768px) {
+  .carousel__item {
+    display: block;
+  }
+}
+
+.carousel__item--selected {
+  display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media (min-width: 768px) {
+  .carousel__item--hidden {
+    display: none;
+  }
+}
+
+.carousel__img {
+  width: 100px;
+}
+
+.carousel h4 {
+  color: #252c56;
+}
+
+.carousel__text {
+  margin-block: 1rem;
+}
+
+.carousel__nav {
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  margin-block: rem;
+}
+
+@media (min-width: 768px) {
+  .carousel__nav {
+    display: none;
+  }
+}
+
+.carousel__button {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border: 1px solid #f25f3a;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.carousel__button--selected {
+  background: #f25f3a;
 }
 /*# sourceMappingURL=main.css.map */
