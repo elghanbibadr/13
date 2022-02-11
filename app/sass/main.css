@@ -272,8 +272,10 @@ a {
 .container {
   padding: 1rem;
   text-align: center;
-  background-color: black;
-  background-color: #fafafa;
+}
+
+.container h1 {
+  margin-bottom: 4rem;
 }
 
 .carousel {
@@ -287,8 +289,11 @@ a {
   font-size: 2em;
   color: #ffffff;
   display: none;
+  margin-bottom: 2rem;
+  position: relative;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  background-color: #fafafa;
 }
 
 @media (min-width: 833px) {
@@ -310,11 +315,15 @@ a {
 }
 
 .carousel__img {
-  width: 100px;
+  width: 80px;
+  position: absolute;
+  top: -2.5rem;
+  left: 40%;
 }
 
 .carousel h4 {
   color: #252c56;
+  margin-top: 2rem;
 }
 
 .carousel__text {

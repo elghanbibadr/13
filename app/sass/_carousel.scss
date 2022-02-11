@@ -1,8 +1,9 @@
 .container {
   padding: 1rem;
   @include contentCenter;
-  background-color: black;
-  background-color: #fafafa;
+  h1 {
+    margin-bottom: 4rem;
+  }
 }
 .carousel {
   position: relative;
@@ -13,8 +14,10 @@
     font-size: 2em;
     color: #ffffff;
     display: none;
+    margin-bottom: 2rem;
+    position: relative;
     transition: 0.5s;
-
+    background-color: #fafafa;
     @include desktop {
       display: block;
     }
@@ -29,10 +32,14 @@
     }
   }
   &__img {
-    width: 100px;
+    width: 80px;
+    position: absolute;
+    top: -2.5rem;
+    left: 40%;
   }
   h4 {
     color: $primary-color;
+    margin-top: 2rem;
   }
 
   &__text {
