@@ -37,10 +37,12 @@ h1 {
 
 h2 {
   font-weight: 700;
+  font-size: 2.2rem;
 }
 
 h3 {
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 1.3rem;
 }
 
 p {
@@ -349,5 +351,87 @@ a {
 
 .carousel__button--selected {
   background: #f25f3a;
+}
+
+.features {
+  text-align: center;
+}
+
+@media (min-width: 833px) {
+  .features {
+    text-align: left;
+  }
+}
+
+.features__header br {
+  display: none;
+}
+
+@media (min-width: 833px) {
+  .features__header br {
+    display: block;
+  }
+}
+
+.features__header p {
+  margin-inline: 2rem;
+}
+
+@media (min-width: 833px) {
+  .features__header p {
+    margin-inline: 0;
+  }
+}
+
+.features p {
+  margin-block: 1rem 2rem;
+}
+
+.features .container {
+  background-color: #f9ded5;
+  border-radius: 30px 0 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+.features .container h3 {
+  padding-block: 0.4rem;
+}
+
+@media (min-width: 833px) {
+  .features .container h3 {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+  }
+}
+
+@media (min-width: 833px) {
+  .features .container {
+    background-color: transparent;
+    position: relative;
+    left: -5.5rem;
+  }
+}
+
+.features .container__number {
+  display: inline-block;
+  color: white;
+  width: 5rem;
+  background-color: #f25f3a;
+  border-radius: 30px;
+  padding-top: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.features .container__number span {
+  font-weight: bold;
+}
+
+@media (min-width: 833px) {
+  .features__header {
+    margin-right: 5rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
