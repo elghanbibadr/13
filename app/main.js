@@ -1,3 +1,14 @@
+// nav
+const collapsibles = document.querySelectorAll(".collapsible");
+collapsibles.forEach((item) =>
+  item.addEventListener("click", function () {
+    this.classList.toggle("collapsible--expanded");
+  })
+);
+
+
+
+// carousell
 document.querySelectorAll(".carousel").forEach((carousel) => {
     const items = carousel.querySelectorAll(".carousel__item");
     const buttonsHtml = Array.from(items, () => {

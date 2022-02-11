@@ -4,7 +4,8 @@ $color-text: hsl(227, 12%, 61%);
 $Very-Dark-Blue: hsl(233, 12%, 13%);
 $Very-Pale-Red: hsla(12, 100%, 96%, 0.801);
 $Vary-Light-Gray: white;
-$breaking-point: 768px;
+$breaking-point: 833px;
+$breaking-point3: 550px;
 $breaking-point2: 950px;
 $font-weight: (
   "regular": 500,
@@ -12,11 +13,17 @@ $font-weight: (
   "bold": 700,
   "bolder": 800,
 );
+@mixin tablette {
+  @media (min-width: $breaking-point3) {
+    @content;
+  }
+}
 @mixin desktop {
   @media (min-width: $breaking-point) {
     @content;
   }
 }
+
 @mixin desktopLarge {
   @media (min-width: $breaking-point2) {
     @content;
