@@ -1,5 +1,6 @@
 .callout {
   background-color: $secondary-color;
+
   @include contentCenter;
   @include contentLeft;
   padding: 4rem 3rem;
