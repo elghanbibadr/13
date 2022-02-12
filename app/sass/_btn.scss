@@ -16,6 +16,9 @@
 .btn--white {
   background-color: white;
   color: $secondary-color;
+  &:hover {
+    background-color: rgb(235, 235, 235);
+  }
 }
 .input {
   padding: 0.7rem 1.2rem;

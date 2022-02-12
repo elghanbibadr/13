@@ -80,6 +80,10 @@ a {
   color: #f25f3a;
 }
 
+.btn--white:hover {
+  background-color: #ebebeb;
+}
+
 .input {
   padding: 0.7rem 1.2rem;
   border: 0;
@@ -441,6 +445,54 @@ a {
 @media (min-width: 833px) {
   .features__header {
     margin-right: 5rem;
+  }
+}
+
+.callout {
+  background-color: #f25f3a;
+  text-align: center;
+  padding: 4rem 3rem;
+  background-image: url(/images/bg-simplify-section-mobile.svg);
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+@media (min-width: 833px) {
+  .callout {
+    text-align: left;
+  }
+}
+
+@media (min-width: 950px) {
+  .callout {
+    background-image: url(/images/bg-simplify-section-desktop.svg);
+    background-position: 5rem -5rem;
+  }
+}
+
+.callout__heading {
+  color: white;
+}
+
+@media (min-width: 833px) {
+  .callout__heading {
+    padding: 1rem;
+    margin-left: 5rem;
+  }
+}
+
+.callout__btn {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-top: 2rem;
+}
+
+@media (min-width: 833px) {
+  .callout__btn {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
