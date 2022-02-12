@@ -6,6 +6,7 @@
   border-radius: 30px;
   font-weight: 700;
   font-family: inherit;
+  box-shadow: 0 5px 10px #ffc3b8;
   text-transform: capitalize;
   cursor: pointer;
   transition: 0.5s;
@@ -16,6 +17,7 @@
 .btn--white {
   background-color: white;
   color: $secondary-color;
+  box-shadow: none;
   &:hover {
     background-color: rgb(235, 235, 235);
   }

@@ -8,6 +8,7 @@
 
     input {
       width: 70%;
+      outline: none;
     }
   }
   &__lists {
@@ -21,6 +22,9 @@
     li {
       color: white;
       margin-top: 0.5rem;
+      @include desktop {
+        margin-block: 1rem;
+      }
     }
   }
   .copyright {
@@ -31,6 +35,7 @@
     align-self: end;
     svg {
       margin-inline: 1rem;
+      transform: scale(1.5);
       @include desktop {
         margin-inline: 0.5rem;
       }
@@ -53,5 +58,8 @@
     &__logo {
       fill: white;
     }
+  }
+  button {
+    box-shadow: none;
   }
 }
