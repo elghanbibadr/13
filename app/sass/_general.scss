@@ -5,10 +5,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+header,
+.features {
+  @include desktopLarge {
+    padding-inline: 4rem;
+  }
+}
 body {
   font-size: 1rem;
   line-height: 1.3;
   padding: 1rem;
+
   background-color: #fff;
   font-family: "Be Vietnam Pro", sans-serif;
   // @include desktopLarge {
