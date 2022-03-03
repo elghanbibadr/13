@@ -3,9 +3,13 @@
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 1.5rem 1rem;
-
+  &__close,
+  &__menu {
+    cursor: pointer;
+  }
   &__close {
     display: none;
+
     @include desktop {
       display: none;
     }

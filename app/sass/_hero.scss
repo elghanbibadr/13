@@ -5,9 +5,15 @@
     transform: translateX(-50px) scale(0.8);
     @include tablette {
       transform: translateX(70px);
+      zoom: 90%;
     }
     @include desktop {
       transform: none;
+      zoom: 70%;
+    }
+    @include desktopLarge {
+      transform: none;
+      zoom: 100%;
     }
   }
   p {

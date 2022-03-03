@@ -22,6 +22,11 @@
     li {
       color: white;
       margin-top: 0.5rem;
+      cursor: pointer;
+      &:hover {
+        color: #ccc;
+        transition: 0.3s;
+      }
       @include desktop {
         margin-block: 1rem;
       }
@@ -35,6 +40,11 @@
     align-self: end;
     svg {
       margin-inline: 1rem;
+      cursor: pointer;
+      transition: 0.4s;
+      &:hover {
+        transform: scale(1.6);
+      }
       transform: scale(1.5);
       @include desktop {
         margin-inline: 0.5rem;

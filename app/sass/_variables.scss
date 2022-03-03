@@ -6,13 +6,18 @@ $Very-Pale-Red: hsla(12, 100%, 96%, 0.801);
 $Vary-Light-Gray: white;
 $breaking-point: 833px;
 $breaking-point3: 550px;
-$breaking-point2: 950px;
+$breaking-point2: 1050px;
 $font-weight: (
   "regular": 500,
   "medium": 600,
   "bold": 700,
   "bolder": 800,
 );
+// @mixin mobile {
+//   @media (max-width: $breaking-point3) {
+//     @content;
+//   }
+// }
 @mixin tablette {
   @media (min-width: $breaking-point3) {
     @content;
@@ -32,10 +37,9 @@ $font-weight: (
 @mixin contentCenter {
   text-align: center;
 }
+
 @mixin contentLeft {
-  @include desktop {
-    text-align: left;
-  }
+  text-align: left;
 }
 @mixin largeWidth {
   width: 100%;
