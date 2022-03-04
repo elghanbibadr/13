@@ -135,35 +135,6 @@ a:hover {
   margin-top: 2rem;
 }
 
-.hero svg {
-  -webkit-transform: translateX(-50px) scale(0.8);
-          transform: translateX(-50px) scale(0.8);
-}
-
-@media (min-width: 550px) {
-  .hero svg {
-    -webkit-transform: translateX(70px);
-            transform: translateX(70px);
-    zoom: 90%;
-  }
-}
-
-@media (min-width: 833px) {
-  .hero svg {
-    -webkit-transform: none;
-            transform: none;
-    zoom: 70%;
-  }
-}
-
-@media (min-width: 1050px) {
-  .hero svg {
-    -webkit-transform: none;
-            transform: none;
-    zoom: 100%;
-  }
-}
-
 .hero p {
   margin-block: 1rem;
 }
@@ -179,10 +150,7 @@ a:hover {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-area: 1/1/1/2;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    margin-left: 3rem;
+    margin: 3rem 0 0 3rem;
   }
 }
 
@@ -405,9 +373,13 @@ a:hover {
 }
 
 .features {
-  margin-top: 5rem;
+  margin-top: 3rem;
   text-align: center;
   text-align: left;
+}
+
+.features__header {
+  text-align: center;
 }
 
 .features__header br {

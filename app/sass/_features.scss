@@ -1,14 +1,16 @@
 .features {
-  margin-top: 5rem;
+  margin-top: 3rem;
   @include contentCenter;
   @include contentLeft;
   &__header {
+    text-align: center;
     br {
       display: none;
       @include desktop {
         display: block;
       }
     }
+
     p {
       margin-inline: 2rem;
       @include desktop {
